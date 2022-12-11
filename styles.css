@@ -1,7 +1,4 @@
-/* @override 
-	http://clickthatbutton.com/css/styles.css
-	http://www.clickthatbutton.com/css/styles.css
-*/
+
 
 #submit {-webkit-user-select:none; -moz-user-select:none;}
 
@@ -29,7 +26,6 @@ a img {
 body {
 	color: #2b2b2b;
 	text-align: center;
-	background: #000 url(http://www.clickthatbutton.com/images/grad.gif) repeat-x 0 0;
 }
 
 #wrapper {
