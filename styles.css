@@ -1,0 +1,107 @@
+/* @override 
+	http://clickthatbutton.com/css/styles.css
+	http://www.clickthatbutton.com/css/styles.css
+*/
+
+#submit {-webkit-user-select:none; -moz-user-select:none;}
+
+:-moz-any-link:focus { outline: none; }
+
+* {
+}
+
+#logo img {
+	margin-top: 20px;
+}
+
+h1, h2, h3, h4, h5, h6, p, pre, blockquote, label, ul, ol, dl, fieldset, address { margin: 0; }
+fieldset { padding: .5em; }
+li { margin: 0; padding: 0; list-style-type: none; }
+
+a img { 
+	border: 0;
+	margin-top: 0px;
+	}
+
+
+
+
+body {
+	color: #2b2b2b;
+	text-align: center;
+	background: #000 url(http://www.clickthatbutton.com/images/grad.gif) repeat-x 0 0;
+}
+
+#wrapper {
+}
+
+#clicks-total {
+	letter-spacing: 2px;
+	color: #fff;
+	font: bold 100px/100px "Gill Sans", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	margin-top: 25px;
+}
+
+#clicks-user {
+	color: #b9b9b9;
+	margin-bottom: 60px;
+	font: bold 13px "Gill Sans", helvetica-neue, helvetica, arial, verdana, san-serif;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	margin-top: 20px;
+}
+
+#whois a {
+	text-decoration: none;
+	color: #8f8f8f;
+}
+
+#whois {
+  position: absolute;
+    bottom: 0;
+	padding-bottom: 10px;
+	text-align: right;
+	padding-left: 10px;
+	font: italic 12px Georgia, "Times New Roman", Times, serif;
+	color: #ca4808;
+}
+
+#box2 {
+	background-color: #000;
+}
+
+#news_wrapper {
+	background-color: #000;
+	width: 350px;
+	padding: 12px;
+	
+}
+
+#news_title {
+	color: #ddd;
+	text-align: left;
+	padding-bottom: 12px;
+	font: bold 15px Georgia, "Times New Roman", Times, serif;
+	text-transform: uppercase;
+}
+
+#news_entry a {
+	color: #70a2fe;
+	text-decoration: none;
+}
+
+#news_date {
+	color: #5c5c5c;
+	text-align: left;
+	font: italic 11px Georgia, "Times New Roman", Times, serif;
+	padding-bottom: 2px;
+}
+
+#news_entry {
+	color: #cacaca;
+	text-align: left;
+	font: italic 12px "Lucida Grande", Lucida, Verdana, sans-serif;
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #232323;
+}
