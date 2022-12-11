@@ -63,21 +63,51 @@
       </div>
     </section>
     <section class="u-clearfix u-section-2" id="sec-3ab6">
-      <div class="u-clearfix u-sheet u-valign-top u-sheet-1">
-        <div class="u-clearfix u-custom-html u-expanded-width u-custom-html-1"><!--?php
-   session_start();
-   // Page was not reloaded via a button press
-   if (!isset($_POST['add'])) {
-       $_SESSION['attnum'] = 1; // Reset counter
-   }
-?-->
-          <form method="post">
-            <input name="add" type="submit" value="+">
-            <h3>
-              <em>att<!--?php echo $_SESSION['attnum']++ ?-->: </em>
-            </h3>
-          </form>
-        </div>
+	    <!-- button -->
+      <div id="button">
+  	  <form id="click" action="/" method="post">
+  		  <span id="button-submit">
+  		    <input id="submit" type="image" name="submit" src="image.jpg">
+  		  </span>
+  		</form>
+  	</div>
+<div id="clicks-total">
+  		<span id="clicks-total-number">0</span>
+  	</div>
+ <script type="text/javascript">
+    $(document).ready(function(){
+      
+      $('#clicks-user-number').html($.cookie('click'));
+        
+      $("#submit").mouseup(function(){ 
+        this.src = 'images/buttonup_09.jpg';
+      }).mousedown(function(){
+        this.src = 'images/ButtonDown_09.jpg';
+      });
+      $("#click").ajaxForm({success: doResponse});
+      $('#box1_link').fancyZoom();
+      $('#box2_link').fancyZoom();
+            
+    }); 
+
+    function doResponse(clicksTotal){
+      var clicksUser = parseFloat($.cookie('click')) + 1;
+      $.cookie('click', clicksUser, { expires: 365 });
+      $('#clicks-user-number').html(clicksUser);
+      $('#clicks-total-number').html(clicksTotal);
+    }
+
+    jQuery.preloadImages = function(){
+      for(var i = 0; i<arguments.length; i++) {
+        jQuery("<img>").attr("src", arguments[i]);
+      }
+    }
+    $.preloadImages("images/buttonup_09.jpg", "images/ButtonDown_09.jpg");
+  </script>
+<div>
+  <p id="showCounts"></p>
+</div>
+	   <!-- button -->
       </div>
     </section>
     <section class="u-clearfix u-container-align-center u-section-3" id="sec-69fd">
