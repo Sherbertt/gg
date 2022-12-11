@@ -67,7 +67,7 @@
       <div id="button">
   	  <form id="click" action="/" method="post">
   		  <span id="button-submit">
-  		    <input id="submit" type="image" name="submit" src="image.jpg">
+  		    <input id="submit" type="image" name="submit" src="buttonup_09.jpg">
   		  </span>
   		</form>
   	</div>
@@ -80,9 +80,9 @@
       $('#clicks-user-number').html($.cookie('click'));
         
       $("#submit").mouseup(function(){ 
-        this.src = 'images/buttonup_09.jpg';
+        this.src = 'buttonup_09.jpg';
       }).mousedown(function(){
-        this.src = 'images/ButtonDown_09.jpg';
+        this.src = 'ButtonDown_09.jpg';
       });
       $("#click").ajaxForm({success: doResponse});
       $('#box1_link').fancyZoom();
@@ -102,7 +102,7 @@
         jQuery("<img>").attr("src", arguments[i]);
       }
     }
-    $.preloadImages("images/buttonup_09.jpg", "images/ButtonDown_09.jpg");
+    $.preloadImages("buttonup_09.jpg", "ButtonDown_09.jpg");
   </script>
 <div>
   <p id="showCounts"></p>
