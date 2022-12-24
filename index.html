@@ -71,11 +71,15 @@
 <p><span id="clicks">(Click to See)</span> Defendrl Haters</p>
 <button onclick="clicked()"><img src="buttonup_09.jpg"></button>
 <script>
-	$("clicked()").mouseup(function(){ 
-        this.src = 'buttonup_09.jpg';
-      }).mousedown(function(){
-        this.src = 'ButtonDown_09.jpg';
-      });
+	
+function clicked() {
+	this.src = 'ButtonDown_09.jpg';
+	var delayInMilliseconds = 25; 
+setTimeout(function() {
+	this.src = 'buttonup_09.jpg';
+}, delayInMilliseconds);
+	}
+	
 function clicked() {
     var xhr = new XMLHttpRequest();
     xhr.open("GET", "https://api.countapi.xyz/hit/defendrl/hit");
