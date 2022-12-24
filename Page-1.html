@@ -120,6 +120,8 @@
             <div id="mainDialog">
                 <div id="dialogText">This page is password protected.</div>
                 <div id="passArea">
+                   <!-- password
+
                     <p id="passwordPrompt">Password</p>
                     <input id="pass" type="password" name="pass" autofocus>
                     <div>
@@ -133,6 +135,38 @@
                         <div style="clear: both;"></div>
                     </div>
                 </div>
+password -->
+                  <!-- chess puzzle -->
+                  <iframe style="width: 400px; height: 560px;" src="https://www.chess.com/daily_puzzle" frameborder="0"></iframe>
+                  <input id="random" type="password" name="pass" autofocus>
+                  <button onclick="check()">Check if Solved</button>
+                  
+                  <div>
+                        <span id="messageWrapper">
+                            <span id="invalidPass" class="error">Sorry, please try again.</span>
+                            <span id="trycatcherror" class="error">Sorry, something went wrong.</span>
+                            <span id="success" class="notifyText">Success!</span>
+                            &nbsp;
+                        </span>
+                        <button id="submitPass" type="button">Submit</button>
+                        <div style="clear: both;"></div>
+                    </div>
+                 
+                  <script>
+                    function check() {
+   
+       if (element.classList.contains(#diagram-move-list-puzzle-progress solved) {
+           document.getElementById("random").id = "pass";
+} else {
+  alert(`Puzzle Failed`);
+}
+       
+    }
+   
+                     
+                  </script>
+              </div>
+                  <!-- chess puzzle -->
                 <div id="securecontext" class="error">
                     <p>
                         Sorry, but password protection only works over a secure connection. Please load this page via HTTPS.
