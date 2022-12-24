@@ -57,8 +57,18 @@
 	  
 	    <!-- button -->
 	    
-<button onclick="clicked()">DefendrL Haters Count</button>
+
+	    
+	    
+	    
+	    
+<button onclick="clicked()" src="buttonup_09.jpg">DefendrL Haters Count</button>
 <script>
+	$("clicked()").mouseup(function(){ 
+        this.src = 'buttonup_09.jpg';
+      }).mousedown(function(){
+        this.src = 'ButtonDown_09.jpg';
+      });
 function clicked() {
     var xhr = new XMLHttpRequest();
     xhr.open("GET", "https://api.countapi.xyz/hit/defendrl/hit");
