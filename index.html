@@ -78,7 +78,7 @@ function clicked() {
     xhr.open("GET", "https://api.countapi.xyz/hit/defendrl/hit");
     xhr.responseType = "json";
     xhr.onload = function() {
-	  document.getElementById("clicks").textContent=${this.response.value};
+	  document.getElementById("clicks").textContent=this.response.value;
       	<!-- alert(`There are ${this.response.value} DefendrL Haters`); -->
 	    
     }
