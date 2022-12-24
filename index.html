@@ -14,8 +14,6 @@
     <meta name="generator" content="Nicepage 5.1.5, nicepage.com">
     <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
 	
-	<!-- scripts -->
-	
 	
   </head>
 	
@@ -59,13 +57,18 @@
 	  
 	    <!-- button -->
 	    
-      <div id="button">
-  	  <form id="click" action="/" method="post" data-netlify="true">
-  		  <span id="button-submit">
-  		    <input id="submit" type="image" name="submit" src="buttonup_09.jpg">
-  		  </span>
-  		</form>
-  	</div>
+<button onclick="clicked()">DefendrL Haters Count</button>
+<script>
+function clicked() {
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET", "https://api.countapi.xyz/hit/defendrl/hit");
+    xhr.responseType = "json";
+    xhr.onload = function() {
+        alert(`There are ${this.response.value} DefendrL Haters`);
+    }
+    xhr.send();
+}
+</script>
 
 	    
 	    <!-- button -->
