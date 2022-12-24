@@ -73,10 +73,10 @@
 <script>
 	
 function clicked() {
-	this.src = 'ButtonDown_09.jpg';
+	document.getElementById("clicks").src = 'ButtonDown_09.jpg';
 	var delayInMilliseconds = 25; 
 setTimeout(function() {
-	this.src = 'buttonup_09.jpg';
+	document.getElementById("clicks").src = 'buttonup_09.jpg';
 }, delayInMilliseconds);
 	}
 	
