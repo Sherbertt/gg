@@ -73,24 +73,18 @@
 <script>
 	
 function clicked() {
-	document.getElementById("clicks").src = 'ButtonDown_09.jpg';
-	var delayInMilliseconds = 25; 
-setTimeout(function() {
-	document.getElementById("clicks").src = 'buttonup_09.jpg';
-}, delayInMilliseconds);
-	}
-	
-function clicked() {
     var xhr = new XMLHttpRequest();
     xhr.open("GET", "https://api.countapi.xyz/hit/defendrl/hit");
     xhr.responseType = "json";
     xhr.onload = function() {
 	  document.getElementById("clicks").textContent=this.response.value;
+	  document.getElementById("clicks").src = 'ButtonDown_09.jpg';
       	<!-- alert(`There are ${this.response.value} DefendrL Haters`); -->
 	    
     }
     xhr.send();
 }
+	
 </script>
 
 	    
